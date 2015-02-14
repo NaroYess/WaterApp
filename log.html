@@ -89,11 +89,44 @@
                     
                     <hr class="visible-xs">
 
+                   <form name="myform" action="checkboxes.asp" method="post">
+                     <div class="tagline2"> Keep track of your daily intake with just a click.</div>
+                   
+                        <input type="checkbox" name="check_list" value="1">     8oz<br>
+                        <input type="checkbox" name="check_list" value="2">     8oz<br>
+                        <input type="checkbox" name="check_list" value="3">     8oz<br>
+                        <input type="checkbox" name="check_list" value="4">     8oz<br>
+                        <input type="checkbox" name="check_list" value="5">     8oz<br>
 
-                    
-                     
-                            
-                           <div class="tagline2"> Stay Hydrated | Stay Healthy | Stay Happy</div>
+                        <input type="button" name="Check_All" value="Check All"
+                        onClick="CheckAll(document.myform.check_list)">
+                        <input type="button" name="Un_CheckAll" value="Uncheck All"
+                        onClick="UnCheckAll(document.myform.check_list)">
+
+                         <div class="tagline2">
+
+	                       	 <script>
+								 var Digital=new Date()
+		                        var hours=Digital.getHours()
+
+			                        //Configure message below to your own.
+			                        if (hours>=5&&hours<=11) //MESSAGE FOR MORNING
+			                        document.write('<b>Good Morning! Stay Hydrated Today! </b>')
+			                        else if (hours==12) //MESSAGE FOR NOON
+			                        document.write('<b>Keeping Drinking!</b>')
+			                        else if (hours>=13&&hours<=17) //MESSAGE FOR AFTERNOON
+			                        document.write('<b>Good afternoon. Good Job So Far! Stay happy!</b>')
+			                        else if (hours>=18&&hours<=20) //MESSAGE FOR EVENING (6pm-8pm)
+			                        document.write('<b>Good evening. Stay Healthy!</b>')
+			                        else if (hours>=21&&hours<=11) //MESSAGE FOR NIGHT (9pm-11pm)
+			                        document.write('<b>Glad to see you made it through the day.</b>')
+			                        else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
+			                        document.write('<b>Can\'t Sleep? You must need water! </b>')
+
+							</script>
+						</div>
+                        
+                         <div class="tagline2"> Stay Hydrated | Stay Healthy | Stay Happy</div>
 
                                 
                 </div>
@@ -121,6 +154,10 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+
+
+    <script type="text/javascript"></script>
 
   
 </body>
