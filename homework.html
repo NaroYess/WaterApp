@@ -54,22 +54,13 @@
                     <li>
                         <a href="index.html">Home</a>
                     </li>
-
+                    
                     <li>
                         <a href="log.html">Water Log</a>
                     </li>
                    
                     <li>
                         <a href="challenge.html">30 Day Challenge</a>
-                    </li>
-                        </li>
-
-                     <li>
-                        <a href="benefits.html">Benefits of Drinking Water</a>
-                    </li>
-                    
-                     <li>
-                        <a href="homework.html">Homework</a>
                     </li>
                 </ul>
             </div>
@@ -78,60 +69,54 @@
         <!-- /.container -->
     </nav>
 
+
     <div class="container">
+
+    <h3>1. Welcome Alert </h3>
+
+    <h3>2.  Button </h3>
+
+    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+      Hover Button
+    </button>
 
 
      <!-- Water Log -->
-
+        <h3> 3. SlideShow</h3>
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
                    
-                    <h2 class="intro-text text-center">My Personal
-                        <strong>Water Log</strong>
-                    </h2>
+                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                   <!-- Indicators -->
+                   <ol class="carousel-indicators">
+                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                   </ol>
+
+                   <!-- Wrapper for slides -->
+                   <div class="carousel-inner" role="listbox">
+                     <div class="item active">
+                       <img src="img/Slideshow/Slide_1.jpg" height="1000" width="600" alt="...">
+                    
+                     </div>
+                     <div class="item">
+                       <img src="img/Slideshow/Slide_2.jpg" height="1000" width="600" alt="...">
+                      
+                     </div>
+
+                    
+                   </div>
                     
                     
                     <hr class="visible-xs">
 
-                   <form name="myform" action="checkboxes.asp" method="post">
-                     <div class="tagline2"> Keep track of your daily intake with just a click.</div>
-                   
-                        <input type="checkbox" name="check_list" value="1">     8oz<br>
-                        <input type="checkbox" name="check_list" value="2">     8oz<br>
-                        <input type="checkbox" name="check_list" value="3">     8oz<br>
-                        <input type="checkbox" name="check_list" value="4">     8oz<br>
-                        <input type="checkbox" name="check_list" value="5">     8oz<br>
 
-                        <input type="button" name="Check_All" value="Check All"
-                        onClick="CheckAll(document.myform.check_list)">
-                        <input type="button" name="Un_CheckAll" value="Uncheck All"
-                        onClick="UnCheckAll(document.myform.check_list)">
-
-                         <div class="tagline2">
-
-                             <script>
-                                 var Digital=new Date()
-                                var hours=Digital.getHours()
-
-                                    //Configure message below to your own.
-                                    if (hours>=5&&hours<=11) //MESSAGE FOR MORNING
-                                    document.write('<b>Good Morning! Stay Hydrated Today! </b>')
-                                    else if (hours==12) //MESSAGE FOR NOON
-                                    document.write('<b>Keeping Drinking!</b>')
-                                    else if (hours>=13&&hours<=17) //MESSAGE FOR AFTERNOON
-                                    document.write('<b>Good afternoon. Good Job So Far! Stay happy!</b>')
-                                    else if (hours>=18&&hours<=20) //MESSAGE FOR EVENING (6pm-8pm)
-                                    document.write('<b>Good evening. Stay Healthy!</b>')
-                                    else if (hours>=21&&hours<=11) //MESSAGE FOR NIGHT (9pm-11pm)
-                                    document.write('<b>Glad to see you made it through the day.</b>')
-                                    else //MESSAGE FOR LATE NIGHT, EARLY MORNING (12pm-4am)
-                                    document.write('<b>Can\'t Sleep? You must need water! </b>')
-
-                            </script>
-                        </div>
-                        
-                         <div class="tagline2"> Stay Hydrated | Stay Healthy | Stay Happy</div>
+                    
+                     
+                            
+                           <div class="tagline2"> Stay Hydrated | Stay Healthy | Stay Happy</div>
 
                                 
                 </div>
@@ -154,6 +139,15 @@
         </div>
     </footer>
 
+    <!-- ALERT-->
+ 
+    <script language="javascript" type="text/javascript">
+    alert("Welcome to HydrationLog!")
+    </script>
+         
+    <font face="Tahoma"><a target="_blank" href="#"><span style="font-size: 8pt; text-decoration: none"></span></a></font>
+   
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -161,8 +155,6 @@
     <script src="js/bootstrap.min.js"></script>
 
 
-
-    <script type="text/javascript"></script>
 
   
 </body>
