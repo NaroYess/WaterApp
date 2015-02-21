@@ -14,3 +14,5 @@ chk[i].checked = false ;
 }
 
 
+/*homework*/
+

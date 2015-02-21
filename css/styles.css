@@ -226,7 +226,51 @@ input {
         clear: both;
     }
 
+/*HOMEWORK*/
+.inset {
+    background-color: #ffffff;
+
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.main {
+width:200px;
+border:1px solid black;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:white;
+}
+
+.daysofweek {
+background-color:gray;
+font:bold 12px verdana;
+color:white;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:black;
+background-color: red;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: red;
+}
 
 
+@media screen and (min-width: 700px) {
+    .inset {
+        width: 90%;
+    }
+}
 
-    
+
