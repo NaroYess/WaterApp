@@ -17,4 +17,14 @@
         Naro Yess
     </author>
 
+    <!-- Social Sharing -->
+    <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
+
+    <!-- Local Notification -->
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" version="0.8.1" />
+
+    <!-- Screen shot -->
+    <gap:plugin name="com.darktalker.cordova.screenshot" version="0.1.0" />
+
+
 </widget>
