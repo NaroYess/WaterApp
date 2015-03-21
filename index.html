@@ -14,6 +14,8 @@
 
     <title>Hydration Log</title>
 
+
+
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -25,6 +27,15 @@
     <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 
 
+    <supports-screens android:resizeable=["true"| "false"]
+                  android:smallScreens=["true" | "false"]
+                  android:normalScreens=["true" | "false"]
+                  android:largeScreens=["true" | "false"]
+                  android:xlargeScreens=["true" | "false"]
+                  android:anyDensity=["true" | "false"]
+                  android:requiresSmallestWidthDp="integer"
+                  android:compatibleWidthLimitDp="integer"
+                  android:largestWidthLimitDp="integer"/>
 </head>
 
 <body>
@@ -46,7 +57,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-            
+            <div class="localNotification">
+
+            </div>
                 
                 <a class="navbar-brand" href="index.html">Hydration Log</a>
             </div>
@@ -74,17 +87,13 @@
                      <li>
                         <a href="benefits.html">Benefits of Drinking Water</a>
                     </li>
-                     <li>
-                        <a href="homework.html">Homework</a>
-                    </li>
+                     
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
-    <div class="container">
 
 
      <!-- /About -->
@@ -104,6 +113,8 @@
                             <h2 class="intro-text text-center"> Welcome to <br>Hydration Log! </strong> </h2>
                           
                            <div class="tagline2"> Stay Hydrated | Stay Healthy | Stay Happy</div>
+
+
 
                                 
                 </div>
@@ -126,8 +137,14 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
+
+    <!-- My Script -->
+    <script type="text/javascript" src="js/scripts.js"></script>
+   
+     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -135,11 +152,8 @@
     <!-- PhoneGap javascript reference -->
     <script src="phonegap.js"></script>
 
-   
+    <script type="text/javascript" src="js/social.js"></script>
 
-
-
-  
 </body>
 
 </html>
