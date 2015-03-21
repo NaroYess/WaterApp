@@ -72,9 +72,7 @@
                         <a href="benefits.html">Benefits of Drinking Water</a>
                     </li>
                     
-                     <li>
-                        <a href="homework.html">Homework</a>
-                    </li>
+                
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -97,15 +95,20 @@
                     
                     
                     <hr class="visible-xs">
-
-                   <form name="myform" action="checkboxes.asp" method="post">
-                     <div class="tagline2"> Keep track of your daily intake with just a click.</div>
+                    
+                    <form class="myform" name="myform" action="checkboxes.asp" method="post">
+                    
+                    <h4> Keep track of your daily intake with just a click.</h4>
                    
                         <input type="checkbox" name="check_list" value="1">     8oz<br>
                         <input type="checkbox" name="check_list" value="2">     8oz<br>
                         <input type="checkbox" name="check_list" value="3">     8oz<br>
                         <input type="checkbox" name="check_list" value="4">     8oz<br>
                         <input type="checkbox" name="check_list" value="5">     8oz<br>
+                        <input type="checkbox" name="check_list" value="6">     8oz<br>
+                        <input type="checkbox" name="check_list" value="7">     8oz<br>
+                        <input type="checkbox" name="check_list" value="8">     8oz<br>
+                    
 
                         <input type="button" name="Check_All" value="Check All"
                         onClick="CheckAll(document.myform.check_list)">
@@ -115,7 +118,7 @@
                          <div class="tagline2">
 
 	                       	 <script>
-								 var Digital=new Date()
+								var Digital=new Date()
 		                        var hours=Digital.getHours()
 
 			                        //Configure message below to your own.
@@ -166,10 +169,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- My Script -->
+    <script type="text/javascript" src="js/scripts.js"></script>
 
-
-    <script type="text/javascript"></script>
-
+    
   
 </body>
 
